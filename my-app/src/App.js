@@ -44,14 +44,18 @@ function App() {
           </div>
           <div className="temp">
             {data.main ? (
-              <h3> gradi percepiti: {data.main.feels_like}</h3>
+              <h3> gradi percepiti: {data.main.feels_like} C</h3>
             ) : null}
           </div>
           <div className="description">
-            {data.main ? <p> Tasso di umidità {data.main.humidity} %</p> : null}
+            {data.main ? (
+              <p> Tasso di umidità: {data.main.humidity} %</p>
+            ) : null}
           </div>
           <div className="description">
-            {data.main ? <p> Tasso di umidità {data.clouds.all} %</p> : null}
+            {data.main ? (
+              <p> Probabilità di pioggia: {data.clouds.all} %</p>
+            ) : null}
           </div>
         </div>
 

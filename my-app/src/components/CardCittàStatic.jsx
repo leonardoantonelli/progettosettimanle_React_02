@@ -28,7 +28,7 @@ const CardCittà = () => {
           <Card.Subtitle className="mb-2 text-muted">
             Il meteo di Roma:
           </Card.Subtitle>
-          <Card.Text>Sereno</Card.Text>
+          <Card.Text className="text-dark">Sereno</Card.Text>
           <Card.Link href="#">Clicca per scoprire i dettagli</Card.Link>
         </Card.Body>
       </Card>
