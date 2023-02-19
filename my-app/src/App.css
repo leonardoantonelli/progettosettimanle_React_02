@@ -1,8 +1,18 @@
 .App {
+  
   text-align: center;
   background-image: url("./assets/vector-cloud-smoke-blue-background-cloud-smoke-fog-sky-png_156846-1020.avif");
 }
-
+body{
+  display: flex;
+  align-items: center;
+  text-align: center ;
+  justify-content: center;
+}
+.textm{
+  text-align: center;
+   justify-content: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -29,6 +39,16 @@
   color: #61dafb;
 }
 
+
+.app:before {
+  content: ""  !important;
+  background-image: url("./assets/53625.jpg") !important;
+  width: 100% !important;
+  height: 100% !important;
+ 
+ 
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,16 +58,14 @@
   }
 }
 
-body {
-  content: "";
-  background-image: url("./assets/vector-cloud-smoke-blue-background-cloud-smoke-fog-sky-png_156846-1020.avif");
-  background-size: 100%,100%;
-  background-repeat: no-repeat;
-  height: 100%;
-   background-size: cover;
-  position: absolute;
-  top:0;
-  left: 0
+h1,h2,p,h3{
+  color: white;
+}
+.top{
 
-   ;
+  align-content: center;
+  text-align: center ;
+  justify-content: center;
+  background: rgb(34,193,195);
+background: linear-gradient(3deg, rgba(34,193,195,0.1292892156862745) 0%, rgba(80,152,105,0.05646008403361347) 100%);
 }

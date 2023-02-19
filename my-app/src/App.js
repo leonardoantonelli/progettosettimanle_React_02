@@ -42,19 +42,25 @@ function App() {
           <div className="location ">
             <h1>{data.name}</h1>
           </div>
-          <div className="temp"></div>
-          {data.main ? <h3> gradi percepiti: {data.main.temp}</h3> : null}
-
-          <div className="description"></div>
-          {data.main ? <h3> Tasso di umidità {data.clouds.all} %</h3> : null}
+          <div className="temp">
+            {data.main ? (
+              <h3> gradi percepiti: {data.main.feels_like}</h3>
+            ) : null}
+          </div>
+          <div className="description">
+            {data.main ? <p> Tasso di umidità {data.main.humidity} %</p> : null}
+          </div>
+          <div className="description">
+            {data.main ? <p> Tasso di umidità {data.clouds.all} %</p> : null}
+          </div>
         </div>
-        <BrandExample />
 
-        <Row className=" d-flex justify-content-space-between">
+        <Row className=" d-flex justify-content-space-between textm">
           <CardCittà />
           <CardCittà />
           <CardCittà />
         </Row>
+        <BrandExample />
       </div>
     </>
   );
