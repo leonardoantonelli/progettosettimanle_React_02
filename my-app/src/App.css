@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  
+  background-image: url("./assets/vector-cloud-smoke-blue-background-cloud-smoke-fog-sky-png_156846-1020.avif");
 }
 
 .App-logo {
@@ -36,4 +36,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  content: "";
+  background-image: url("./assets/vector-cloud-smoke-blue-background-cloud-smoke-fog-sky-png_156846-1020.avif");
+  background-size: 100%,100%;
+  background-repeat: no-repeat;
+  height: 100%;
+   background-size: cover;
+  position: absolute;
+  top:0;
+  left: 0
+
+   ;
 }
